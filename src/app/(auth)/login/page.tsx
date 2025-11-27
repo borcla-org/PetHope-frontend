@@ -25,7 +25,7 @@ export default function Page() {
         {/* Formulario */}
         <form className="space-y-5">
           {/* Email */}
-          <div className="space-y-1.5">
+          <div className="space-y-1">
             <label htmlFor="email" className="block text-sm font-medium text-neutral-800">
               Correo electrónico
             </label>
