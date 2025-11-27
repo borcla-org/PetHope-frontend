@@ -5,8 +5,7 @@ import { cn } from '@/shared/utils/cn';
 
 export default function page() {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-[#111c1d] font-sans">
-      
+    <div className="flex flex-col min-h-screen bg-white font-sans">
       {/* Hero Section - Minimalist */}
       <section className="relative py-24 lg:py-36">
         <div className="container mx-auto px-6 max-w-6xl">
@@ -14,13 +13,13 @@ export default function page() {
             
             {/* Text Content */}
             <div className="flex-1 text-center lg:text-left">
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#385759] dark:text-white mb-8 leading-[1.1]">
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#385759] mb-8 leading-[1.1]">
                 Conectando <br/>
                 <span className="text-[#9dc0b3]">Corazones</span>.
               </h1>
-              <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0 font-light">
+              <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0 font-light">
                 La primera plataforma de streaming dedicada al bienestar animal. 
-                <strong className="font-medium text-[#385759] dark:text-[#9dc0b3]"> Mira, interactúa y dona</strong> en tiempo real.
+                <strong className="font-medium text-[#385759]"> Mira, interactúa y dona</strong> en tiempo real.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
                 <Link href="/explorar" className="px-8 py-3 bg-[#385759] hover:bg-[#2a4143] text-white rounded-full font-medium text-lg transition-all shadow-md hover:shadow-lg">

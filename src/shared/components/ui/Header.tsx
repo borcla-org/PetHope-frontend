@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Header() {
     return (
-        <header className='bg-[#f3f2ee] rounded-b-3xl fixed top-0 left-0 right-0 z-50 header-shadow'>
+        <header className='bg-[#f3f2ee] rounded-b-3xl fixed top-0 left-0 right-0 z-50 shadow-2xl'>
             <div className='flex justify-between items-center mx-10'>
                 <Image src="/logo/pethope-logo.png" alt="Logo" width={100} height={100} className='my-2' />
                 <nav className='text-black'>
