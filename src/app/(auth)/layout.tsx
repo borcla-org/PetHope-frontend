@@ -13,7 +13,7 @@ export default function layout({ children }: LayoutProps) {
         <>
             <div className="bg-primary flex h-screen items-center justify-center gap-2">
                 <Image
-                    className="absolute -bottom-33"
+                    className="absolute -bottom-1"
                     src={"/animals/dog-cat.webp"}
                     alt="dog and cat"
                     width={600}
