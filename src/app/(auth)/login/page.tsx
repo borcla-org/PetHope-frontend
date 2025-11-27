@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { FcGoogle } from "react-icons/fc";
+
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-primary flex items-center justify-center px-4">
       {/* Card */}
-      <div className="bg-white/10 backdrop-blur-md shadow-xl rounded-2xl p-8 border border-white/40">
+      <div className="bg-white/10 backdrop-blur-md shadow-xl rounded-2xl px-20 py-8 border border-white/40">
         {/* Logo + título */}
         <div className="flex flex-col items-center gap-2 mb-8">
           <div className="w-20 h-20 relative mb-2">
@@ -72,7 +74,7 @@ export default function Page() {
           {/* Botón Login */}
           <button
             type="submit"
-            className="w-full mt-2 inline-flex items-center justify-center rounded-lg bg-primary-600 hover:bg-primary-700 text-white text-sm font-semibold py-2.5 transition"
+            className="w-full mt-2 inline-flex items-center justify-center rounded-lg bg-accent hover:bg-secundary/80 hover:shadow-xl text-white text-sm font-semibold py-2.5 transition duration-300 hover:scale-105"
           >
             Iniciar sesión
           </button>
@@ -91,12 +93,12 @@ export default function Page() {
             type="button"
             className="w-full inline-flex items-center justify-center gap-2 rounded-lg border border-neutral-300 bg-white text-sm text-neutral-700 py-2.5 hover:bg-neutral-50 transition"
           >
-            <span className="text-xs font-medium">Google</span>
+            <FcGoogle className="text-2xl"></FcGoogle>
           </button>
         </form>
 
         {/* Registro */}
-        <p className="mt-6 text-center text-sm text-neutral-600">
+        <p className="mt-6 text-center text-sm text-black hover:text-blue-600 hover:underline">
           ¿No tienes cuenta?{" "}
           <a href="/register" className="font-semibold text-primary-600 hover:text-primary-700">
             Crear cuenta

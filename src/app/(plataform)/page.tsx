@@ -1,50 +1,55 @@
 import React from 'react';
 import Link from 'next/link';
-import { Heart, Video, Gift, Shield, ArrowRight, Users, Radio } from 'lucide-react';
-import { cn } from '@/shared/utils/cn';
+import { Heart, Gift, Shield, ArrowRight, Users, Radio } from 'lucide-react';
+
+import Image from 'next/image';
 
 export default function page() {
   return (
     <div className="flex flex-col min-h-screen bg-white font-sans">
-      {/* Hero Section - Minimalist */}
-      <section className="relative py-24 lg:py-36">
-        <div className="container mx-auto px-6 max-w-6xl">
-          <div className="flex flex-col lg:flex-row items-center gap-16">
-            
-            {/* Text Content */}
-            <div className="flex-1 text-center lg:text-left">
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#385759] mb-8 leading-[1.1]">
-                Conectando <br/>
-                <span className="text-[#9dc0b3]">Corazones</span>.
-              </h1>
-              <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0 font-light">
-                La primera plataforma de streaming dedicada al bienestar animal. 
-                <strong className="font-medium text-[#385759]"> Mira, interactúa y dona</strong> en tiempo real.
-              </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
-                <Link href="/explorar" className="px-8 py-3 bg-[#385759] hover:bg-[#2a4143] text-white rounded-full font-medium text-lg transition-all shadow-md hover:shadow-lg">
-                  Empezar a Ver
-                </Link>
-                <Link href="/registro" className="px-8 py-3 text-[#385759] dark:text-[#9dc0b3] font-medium text-lg hover:underline underline-offset-4 decoration-2">
-                  Crear Cuenta
-                </Link>
-              </div>
-            </div>
+      <div>
 
-            {/* Hero Image - Clean Frame */}
-            <div className="flex-1 w-full max-w-lg relative">
-                <div className="aspect-square rounded-3xl overflow-hidden bg-[#9dc0b3]/20 relative">
-                    <img 
-                        src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?q=80&w=1972&auto=format&fit=crop" 
-                        alt="Happy Dog" 
-                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-                    />
+      </div>
+        <section className="relative py-24 lg:py-36">
+          <div className="container mx-auto px-6 max-w-6xl">
+            <div className="flex flex-col lg:flex-row items-center gap-16">
+              
+              {/* Text Content */}
+              <div className="flex-1 text-center lg:text-left">
+                <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-[#385759] mb-8 leading-[1.1]">
+                  Conectando <br/>
+                  <span className="text-[#9dc0b3]">Corazones</span>.
+                </h1>
+                <p className="text-xl text-gray-600 mb-10 leading-relaxed max-w-lg mx-auto lg:mx-0 font-light">
+                  La primera plataforma de streaming dedicada al bienestar animal. 
+                  <strong className="font-medium text-[#385759]"> Mira, interactúa y dona</strong> en tiempo real.
+                </p>
+                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
+                  <Link href="/explorar" className="px-8 py-3 bg-[#385759] hover:bg-[#2a4143] text-white rounded-full font-medium text-lg transition-all shadow-md hover:shadow-lg">
+                    Empezar a Ver
+                  </Link>
+                  <Link href="/signup" className="px-8 py-3 text-[#385759] dark:text-[#9dc0b3] font-medium text-lg hover:underline underline-offset-4 decoration-2">
+                    Crear Cuenta
+                  </Link>
                 </div>
-            </div>
+              </div>
 
+              {/* Hero Image - Clean Frame */}
+              <div className="flex-1 w-full max-w-lg relative">
+                  <div className="aspect-square rounded-3xl overflow-hidden bg-[#9dc0b3]/20 relative">
+                      <Image
+                          src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?q=80&w=1972&auto=format&fit=crop" 
+                          alt="Happy Dog" 
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                          width={600} height={600}
+                      />
+                  </div>
+              </div>
+
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      {/* Hero Section - Minimalist */}
 
       {/* Features - Clean Grid */}
       <section className="py-24 bg-[#f8faf9] dark:bg-[#162425]">
