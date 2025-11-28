@@ -11,7 +11,7 @@ const geist = Geist({
 export default function layout({ children }: LayoutProps) {
     return (
         <>
-            <div className="bg-primary flex h-screen items-center justify-center gap-2">
+            <div className="bg-primary flex h-screen items-center justify-center">
                 <Image
                     className="absolute -bottom-1"
                     src={"/animals/dog-cat.webp"}
@@ -19,7 +19,8 @@ export default function layout({ children }: LayoutProps) {
                     width={600}
                     height={600}
                 ></Image>
-                <div className="min-w-1/3">
+                <div className="w-1/2">
+                <div className="flex flex-col items-center">
                     <Image
                         src="/logo/pethope-logo-large.png"
                         alt="logo"
@@ -32,8 +33,9 @@ export default function layout({ children }: LayoutProps) {
                         Conéctate. Mira. Ayuda.
                     </p>
                 </div>
+                </div>
                 <span className="bg-black/30 w-px h-1/2 block "></span>
-                <div>{children}</div>
+                <div className="w-1/2">{children}</div>
             </div>
             <Footer></Footer>
         </>
