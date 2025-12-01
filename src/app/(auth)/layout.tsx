@@ -16,18 +16,18 @@ export default function Layout({ children }: LayoutProps) {
 
     return (
         <>
-            <div className="bg-primary flex h-screen items-center justify-center overflow-hidden">
+            <div className="bg-primary flex h-screen items-center justify-center">
                 {/* Left Panel (Image) - Slides to right on signup */}
                 <div
                     className={`w-1/2 flex justify-center transition-transform duration-500 ease-in-out h-full ${isSignup ? "translate-x-full" : "translate-x-0"
                     }`}
                 >
                     <Image
-                        className="absolute -bottom-1"
-                        src={"/animals/dog-cat.webp"}
+                        className="absolute -bottom-16"
+                        src={"/animals/pets.webp"}
                         alt="dog and cat"
-                        width={600}
-                        height={600}
+                        width={700}
+                        height={700}
                     ></Image>
                     <div className="flex flex-col relative z-10 self-center">
                         <Image
